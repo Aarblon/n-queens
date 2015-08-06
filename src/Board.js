@@ -207,7 +207,7 @@
     // test if any minor diagonals on this board contain conflicts
     hasAnyMinorDiagonalConflicts: function() {
       var n = this.get('n')
-      var baseCoord = (n + n - 1)
+      var baseCoord = (n + n - 2)
 
       for (baseCoord; baseCoord >= 0; baseCoord--){
         if (this.hasMinorDiagonalConflictAt(baseCoord)) return true;
